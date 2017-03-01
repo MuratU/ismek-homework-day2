@@ -36,11 +36,12 @@ public class MainActivity extends AppCompatActivity {
 
         String nickname = etName.getText().toString();
         nickname = nickname.trim();
+        nickname=nickname.toLowerCase();
         String surname = etSurname.getText().toString();
         surname = surname.trim();
         String a[] = nickname.split(" ");
         Arrays.sort(a);
-        
+
         twName.setText("");
         twOrta.setText("");
 
